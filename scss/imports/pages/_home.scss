@@ -195,7 +195,7 @@
 }
 @include xs {
   .welcome {
-    background: url("./img/about-img.jpg");
+    background: url("../img/about-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -469,6 +469,11 @@
 @include xs {
   .gallery {
     margin: 40px 0px;
+    &__wrap {
+      &-img {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
 }
 
@@ -580,6 +585,7 @@
     height: 50px;
     position: relative;
     p {
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
